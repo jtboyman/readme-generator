@@ -78,10 +78,10 @@ const questions = [
         },
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'licenses',
         message: 'Choose a license:',
-        choices: ['MIT', 'GNU General Public License v3.0', 'Other/No License'],
+        choices: ['MIT', 'GNU General Public License v3.0', 'Other (generate empty field)', 'None'],
     },
     {
         type: 'input',
@@ -106,7 +106,6 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
 const writeFile = fileContent => {
     return new Promise((resolve,reject) => {
         fs.writeFile('./dist/README.md', fileContent, err => {
