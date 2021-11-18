@@ -20,8 +20,7 @@ const renderLicenseLink = licenses => {
     return '';
   }
   else {
-    return `
-    * [License](#license)`
+    return `\n * [License](#license)`
   }
 };
 
@@ -32,8 +31,7 @@ const renderLicenseSection = licenses => {
     return '';
   }
   else {
-    return `
-    ### License:
+    return `\n ### License:
     Licensed under the ${licenses} license.`
   }
 };
@@ -43,8 +41,7 @@ const renderProjectLink = projectLink => {
     return '';
   }
   else {
-    return `
-    ${projectLink}`
+    return `\n n${projectLink}`
   }
 };
 
@@ -70,23 +67,26 @@ const generateMarkdown = data => {
   ## Table of Contents:
   * [Description](#description)
   * [Installation](#installation)
-  * [Usage](#usage) ${renderLicenseLink(licenses)}
+  * [Usage](#usage)
+  ${renderLicenseLink(licenses)}
   * [Contributors](#contributors)
   * [Questions](#questions)
   
-  ### Description:
-  ${inputInfo.projectDesc} ${renderProjectLink(projectLink)}
+  ## Description:
+  ${inputInfo.projectDesc}
+  ${renderProjectLink(projectLink)}
 
-  ### Installation:
+  ## Installation:
   ${inputInfo.install}
 
-  ### Usage:
-  ${inputInfo.usage} ${renderScreenshot(screenshot)} ${renderLicenseSection(licenses)}
+  ## Usage:
+  ${inputInfo.usage} ${renderScreenshot(screenshot)}
+  ${renderLicenseSection(licenses)}
 
-  ### Contributors
+  ## Contributors
   ${inputInfo.contribute}
 
-  ### Contact/Questions
+  ## Questions
   You can reach me for additional questions at:
   * GitHub: [${inputInfo.githubUsername}](https://github.com/${inputInfo.githubUsername})
   * Email: ${inputInfo.email}
