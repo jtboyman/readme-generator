@@ -46,6 +46,16 @@ const renderProjectLink = projectLink => {
     return `
     ${projectLink}`
   }
+};
+
+const renderScreenshot = screenshot => {
+  if (!screenshot) {
+    return '';
+  }
+  else {
+    return `
+    ![alt text](${screenshot})`
+  }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -60,19 +70,18 @@ const generateMarkdown = data => {
   ## Table of Contents:
   * [Description](#description)
   * [Installation](#installation)
-  * [Usage](#usage)${renderLicenseLink(licenses)}
+  * [Usage](#usage) ${renderLicenseLink(licenses)}
   * [Contributors](#contributors)
   * [Questions](#questions)
   
   ### Description:
-  ${inputInfo.projectDesc}${renderProjectLink(projectLink)}
+  ${inputInfo.projectDesc} ${renderProjectLink(projectLink)}
 
   ### Installation:
   ${inputInfo.install}
 
   ### Usage:
-  ${inputInfo.usage}
-  ![alt text](${inputInfo.screenshot})${renderLicenseSection(licenses)}
+  ${inputInfo.usage} ${renderScreenshot(screenshot)} ${renderLicenseSection(licenses)}
 
   ### Contributors
   ${inputInfo.contribute}
