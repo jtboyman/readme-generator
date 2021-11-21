@@ -31,7 +31,7 @@ const renderLicenseSection = licenses => {
     return '';
   }
   else {
-    return `\n ### License:
+    return `\n ## License:
     Licensed under the ${licenses} license.`
   }
 };
