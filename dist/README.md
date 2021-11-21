@@ -12,7 +12,7 @@
   * [Questions](#questions)
   
   ## Description:
-  The README Generator is a node application created using the inquirer package. It prompts the user for information regarding a project then uses that information to write a professional README.md file.
+HEHE SNEAKY
   
 
   ## Installation:

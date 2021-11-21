@@ -24,7 +24,7 @@
   In order to utilize this app, you will need to ensure node.js is installed on your device. After ensuring node.js is installed, pull this repository to your local device. Navigate to the root directory of the app in your command line. Then the application can be called from the command line using "node index".
 
   ## Usage:
-  The following video demonstrates an example of how to use this project. 
+  The following video demonstrates an example of how to use this project. You can refer to this readme.md as an example, as well as the generated file in the 'dist' directory [here](dist\README.md).
   
  ## License:
   Licensed under the MIT license.
