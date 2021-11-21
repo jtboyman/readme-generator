@@ -14,6 +14,12 @@
   ## Description:
   The README Generator is a node application created using the inquirer package. It prompts the user for information regarding a project then uses that information to write a professional README.md file.
 
+   ### Features:
+  * Table of contents with links to sections.
+  * Option to add photos/test code.
+  * Two pre-loaded license choices with badges.
+  * Easy to use command line prompting.
+
   ## Installation:
   In order to utilize this app, you will need to ensure node.js is installed on your device. After ensuring node.js is installed, pull this repository to your local device. Navigate to the root directory of the app in your command line. Then the application can be called from the command line using "node index".
 
