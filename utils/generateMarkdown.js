@@ -1,5 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 const renderLicenseBadge = licenses => {
   if (licenses === 'MIT') {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -12,9 +10,6 @@ const renderLicenseBadge = licenses => {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-//function renderLicenseLink(licenses) {}
 const renderLicenseLink = licenses => {
   if (licenses === 'None') {
     return '';
@@ -24,15 +19,13 @@ const renderLicenseLink = licenses => {
   }
 };
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 const renderLicenseSection = licenses => {
   if (licenses === 'None') {
     return '';
   }
   else {
     return `\n ## License:
-    Licensed under the ${licenses} license.`
+  Licensed under the ${licenses} license.`
   }
 };
 
@@ -41,7 +34,7 @@ const renderProjectLink = projectLink => {
     return '';
   }
   else {
-    return `\n n${projectLink}`
+    return `\n ${projectLink}`
   }
 };
 
@@ -55,7 +48,6 @@ const renderScreenshot = screenshot => {
   }
 }
 
-// TODO: Create a function to generate markdown for README
 const generateMarkdown = data => {
 
   const {projectLink, screenshot, licenses, ...inputInfo} = data;
@@ -70,6 +62,7 @@ const generateMarkdown = data => {
   * [Usage](#usage)
   ${renderLicenseLink(licenses)}
   * [Contributors](#contributors)
+  * [Tests](#tests)
   * [Questions](#questions)
   
   ## Description:
@@ -85,6 +78,9 @@ const generateMarkdown = data => {
 
   ## Contributors
   ${inputInfo.contribute}
+
+  ## Tests
+  ${inputInfo.tests}
 
   ## Questions
   You can reach me for additional questions at:

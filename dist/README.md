@@ -1,5 +1,5 @@
 
-  # README Generator
+  # my project
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents:
@@ -9,25 +9,31 @@
   
  * [License](#license)
   * [Contributors](#contributors)
+  * [Tests](#tests)
   * [Questions](#questions)
   
   ## Description:
-HEHE SNEAKY
+  this is my project
   
+ my link goes here
 
   ## Installation:
-  In order to utilize this app, you will need to ensure node.js is installed on your device. After ensuring node.js is installed, pull this repository to your local device. Navigate to the root directory of the app in your command line. Then the application can be called from the command line using "node index".
+  steps for installation
 
   ## Usage:
-  The following video demonstrates an example of how to use this project. 
+  here is how to use it 
+    ![alt text](my img link)
   
- ### License:
-    Licensed under the MIT license.
+ ## License:
+  Licensed under the MIT license.
 
   ## Contributors
-  If you would like to contribute to this project, please feel free to open issues on GitHub, or contact me with questions/ideas/concerns.
+  how to contribute
+
+  ## Tests
+  my test code
 
   ## Questions
   You can reach me for additional questions at:
-  * GitHub: [jtboyman](https://github.com/jtboyman)
-  * Email: jtboyman@gmail.com
+  * GitHub: [githubUsername](https://github.com/githubUsername)
+  * Email: myemailAddress@email.com
